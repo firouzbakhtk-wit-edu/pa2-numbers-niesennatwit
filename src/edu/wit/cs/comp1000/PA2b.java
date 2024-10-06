@@ -1,10 +1,24 @@
 package edu.wit.cs.comp1000;
 import java.util.Scanner;
-// TODO: document this class
-public class PA2b {
+/**
+ * Solution to assignment PA2b. 
+ * Takes 3 inputed numbers and calculates the discriminant. 
+ * Uses the discriminant to calculate the roots
+ * 
+ * @author Nathaniel Niesen
+ */
+public class PA2b 
+{
 
-	// TODO: document this function
-	public static void main(String[] args) {
+	/**
+	 * Solution to assignment PA2b. 
+	 * Takes in user inputs for 3 numbers. 
+	 * Calculates the discriminant. 
+	 * Checks if the roots are imaginary, and outputs that's case if that's so.
+	 * Otherwise calculates the root(s) and lists them in ascending order.
+	 */
+	public static void main(String[] args) 
+	{
 		// setting variables
 		double a = 0;
 		double b = 0;

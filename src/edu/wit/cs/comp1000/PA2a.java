@@ -1,10 +1,21 @@
 package edu.wit.cs.comp1000;
 import java.util.Scanner;
-// TODO: document this class
+/**
+ * Solution to assignment PA2a. 
+ * sorts 5 inputed numbers into a list of every number, a list of positive numbers, and a list of non-positive numbers. 
+ * calculates the sum and average for every number in each list.
+ * 
+ * @author Nathaniel Niesen
+ */
 public class PA2a 
 {
 
-	// TODO: document this function
+	/**
+	 * Solution to assignment PA2a. 
+	 * Takes in user inputs for 5 numbers. 
+	 * Sorts them into all numbers, positive numbers, and non-positive numbers. 
+	 * Calculates the sum and average for every number in each list.
+	 */
 	public static void main(String[] args) 
 	{
 		// setting variables
