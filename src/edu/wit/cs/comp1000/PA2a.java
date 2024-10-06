@@ -38,7 +38,7 @@ public class PA2a
 			System.out.printf("The sum of the %.0f positive number: %d%n", posCount, posSum);
 		}
 		
-		//non positive sum
+		//non-positive sum
 		int nonSum = non[0]+non[1]+non[2]+non[3]+non[4];
 		//all the !=1 check determines is whether to say number or numbers
 		if (nonCount != 1)
