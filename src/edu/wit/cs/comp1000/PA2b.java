@@ -20,7 +20,7 @@ public class PA2b {
 		
 		// calculating discriminant
 		d = (b*b) - (4 * a * c);
-		// getting the imaginary out of the way
+		// getting the imaginary out of the way 
 		if (d < 0)
 		{
 			System.out.printf("Roots: imaginary%n");
