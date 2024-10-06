@@ -6,34 +6,34 @@ public class PA2b {
 	// TODO: document this function
 	public static void main(String[] args) {
 		// setting variables
-		int a = 0;
-		int b = 0;
-		int c = 0;
+		double a = 0;
+		double b = 0;
+		double c = 0;
 		double d = 0; // d is the discriminant
 		Scanner input = new Scanner(System.in);
 		
 		// setting values for variables
 		System.out.printf("Enter a b c: ");
-		a = input.nextInt();
-		b = input.nextInt();
-		c = input.nextInt();
+		a = input.nextDouble();
+		b = input.nextDouble();
+		c = input.nextDouble();
 		
 		// calculating discriminant
 		d = (b*b) - (4 * a * c);
 		// getting the imaginary out of the way
 		if (d < 0)
 		{
-			System.out.printf("Roots: imaginary");
+			System.out.printf("Roots: imaginary%n");
 		}
 		// dealing with the case of only one root
-		if (d == 0)
+		else if (d == 0)
 		{
 			// d is becoming the root since the discriminant is no longer needed
 			d = -b / (2.0 * a);
-			System.out.printf("Root: %.2f", d);
+			System.out.printf("Root: %.2f%n", d);
 		}
 		// fully calculating multiple roots
-		if (d > 0)
+		else if (d > 0)
 		{
 			// e is the first root
 			double e = (-b / (2.0 * a)) - (Math.sqrt(d) / (2.0 * a));
@@ -42,11 +42,11 @@ public class PA2b {
 			// making sure the roots are displayed in proper order
 			if (e > d)
 			{
-				System.out.printf("Roots: %.2f, %.2f", d, e);
+				System.out.printf("Roots: %.2f, %.2f%n", d, e);
 			}
 			else
 			{
-				System.out.printf("Roots: %.2f, %.2f", e, d);
+				System.out.printf("Roots: %.2f, %.2f%n", e, d);
 			}
 		}
 	}
