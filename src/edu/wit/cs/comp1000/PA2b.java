@@ -1,11 +1,54 @@
 package edu.wit.cs.comp1000;
-
+import java.util.Scanner;
 // TODO: document this class
 public class PA2b {
 
 	// TODO: document this function
 	public static void main(String[] args) {
-		// TODO: write your code here
+		// setting variables
+		int a = 0;
+		int b = 0;
+		int c = 0;
+		double d = 0; // d is the discriminant
+		Scanner input = new Scanner(System.in);
+		
+		// setting values for variables
+		System.out.printf("Enter a b c: ");
+		a = input.nextInt();
+		b = input.nextInt();
+		c = input.nextInt();
+		
+		// calculating discriminant
+		d = (b*b) - (4 * a * c);
+		// getting the imaginary out of the way
+		if (d < 0)
+		{
+			System.out.printf("Roots: imaginary");
+		}
+		// dealing with the case of only one root
+		if (d == 0)
+		{
+			// d is becoming the root since the discriminant is no longer needed
+			d = -b / (2.0 * a);
+			System.out.printf("Root: %.2f", d);
+		}
+		// fully calculating multiple roots
+		if (d > 0)
+		{
+			// e is the first root
+			double e = (-b / (2.0 * a)) - (Math.sqrt(d) / (2.0 * a));
+			// d is becoming the second root since the discriminant is no longer needed
+			d = (-b / (2.0 * a)) + (Math.sqrt(d) / (2.0 * a));
+			// making sure the roots are displayed in proper order
+			if (e > d)
+			{
+				System.out.printf("Roots: %.2f, %.2f", d, e);
+			}
+			else
+			{
+				System.out.printf("Roots: %.2f, %.2f", e, d);
+			}
+		}
 	}
 
 }
